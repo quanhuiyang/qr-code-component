@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*border-box，元素的宽度和高度会包括元素的边框（border）和内边距（padding），
+	而不会再加上元素的外边距（margin)，不需要考虑元素的边框和内边距所占据的空间。*/
+}
+
+:root{
+	/*HSL 用色相、飽和度和亮度三個值表示*/
+	--white: hsl(0, 0%, 100%);
+	--light-gray: hsl(212, 45%, 89%);
+	--grayish-blue: hsl(220, 15%, 55%);
+	--dark-blue: hsl(218, 44%, 22%);
+}
+
+img{
+	max-width: 100%;
+}
+
+body{
+	font-family: "Outfit", sans-serif;
+	font-size: 15px;
+	background-color: var(--light-gray);
+	/* 
+	flex-direction 設置為 column，所以主軸是垂直方向，交叉軸是水平方向。
+	因此，align-items: center 用於在水平方向上居中對齊，
+	justify-content: center 用於在垂直方向上居中對齊。*/
+	display: flex;
+	/*預設水平排列*/
+	flex-direction: column;
+	/*垂直方向排列*/
+	align-items: center;
+	/*水平方向中央*/
+	justify-content: center;
+	height: calc(100vh - 1px);/*return to px*/
+	/*垂直方向中央*/
+	margin: 1rem;
+}
+
+.container{
+	background-color: var(--white);
+	padding: 1rem;
+	border-radius: 5%;
+	box-shadow: 0px 15px 25px rgb(0,0,0,0.1);
+	margin-bottom: 2.5rem;
+	max-width: 318px;
+	max-height: 495px;
+}
+
+.container img{
+	border-radius: 4%;
+	margin-bottom: 1.1rem;
+}
+
+.container h1{
+	color: var(--dark-blue);
+	text-align: center;
+	font-size: x-large;
+}
+
+.container p {
+	color: var(--grayish-blue);
+	text-align: center;
+	margin: 1.2rem;
+}
+
+.attribution { 
+	font-size: 11px; 
+	text-align: center; 
+}
+
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+
+/*螢幕的寬度等於或大於 500 像素，將套用該媒體查詢中所定義的樣式*/
+@media (min-width: 500px){
+	.container{
+		width:  400px;
+	}
+}
