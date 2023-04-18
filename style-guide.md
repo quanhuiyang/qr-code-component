@@ -10,13 +10,10 @@ The designs were created to the following widths:
 ## Colors
 
 - White: hsl(0, 0%, 100%)
-#FFFFFF 
 - Light gray: hsl(212, 45%, 89%)
-#D6E2F0
 - Grayish blue: hsl(220, 15%, 55%)
-#7B879D
 - Dark blue: hsl(218, 44%, 22%)
-#1F3051
+
 
 ## Typography
 
